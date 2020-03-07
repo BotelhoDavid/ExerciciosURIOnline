@@ -21,6 +21,6 @@ class URI {
             C = int.Parse(Console.ReadLine());
             D = int.Parse(Console.ReadLine());
 
-            Console.WriteLine("DIFERENCA = {0}", ((A * B) - (C * D)));
+            Console.WriteLine($"DIFERENCA = {(A * B) - (C * D)}");
     }
 }
