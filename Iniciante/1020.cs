@@ -26,6 +26,6 @@ class URI {
             dias %= 30;
             dia = dias /1;
 
-            Console.WriteLine(ano + " ano(s)\n" + mes + " mes(es)\n" + dia + " dia(s)");
+            Console.WriteLine($"{ano} ano(s)\n{mes} mes(es)\n{dia} dia(s)");
     }
 }
