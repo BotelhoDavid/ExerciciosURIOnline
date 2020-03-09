@@ -21,25 +21,22 @@ class URI {
 
         string[] Line = Console.ReadLine().Split(' ');
 
-        // A = double.Parse(Line[0]);
-        // B = double.Parse(Line[1]);
-        // C = double.Parse(Line[2]);
+        A = double.Parse(Line[0]);
+        B = double.Parse(Line[1]);
+        C = double.Parse(Line[2]);
 
-        A = 10.0;
-        B = 20.1;
-        C = 5.1;
+        Delta = Math.Sqrt((B * B) - 4 * A * C);
 
-        Delta = Math.Sqrt((B*B) - 4 * A * C);
-        if ((A != 0) && (Delta > 0)) {
+        if ((A != 0) && (Delta > 0))
+        {
             X1 = (-B + Delta) / (2 * A);
             X2 = (-B - Delta) / (2 * A);
 
-            Console.WriteLine($"R1 = {X1} \n R2 = {X2}");
+            Console.WriteLine($"R1 = {X1:f5}\nR2 = {X2:f5}");
         }
-        else{ 
+        else
+        {
             Console.WriteLine("Impossivel calcular");
-        }
-    
-
+        }    
     }
 }
