@@ -21,6 +21,6 @@ class URI {
 
         int km = int.Parse(Console.ReadLine());
 
-        Console.WriteLine("{0} minutos", km * 2);
+        Console.WriteLine($"{km * 2} minutos");
     }
 }

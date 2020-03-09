@@ -23,6 +23,6 @@ class URI {
             N2 = double.Parse(Console.ReadLine());
             Media = ((N1 * 3.5) + (N2 * 7.5)) / (3.5 + 7.5);
 
-            Console.WriteLine("MEDIA = {0:f5}", Media);
+            Console.WriteLine($"MEDIA = {Media:f5}");
     }
 }

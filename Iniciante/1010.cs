@@ -33,6 +33,6 @@ class URI {
 
             Vt = (Q1 * V1) + (Q2 * V2);
 
-            Console.WriteLine("VALOR A PAGAR: R$ {0:f}", Vt);
+            Console.WriteLine($"VALOR A PAGAR: R$ {Vt:f2}");
     }
 }

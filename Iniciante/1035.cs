@@ -16,24 +16,24 @@ class URI {
 
     static void Main(string[] args) { 
 
-            int A, B, C, D;
+        int A, B, C, D;
 
-            string[] Line = Console.ReadLine().Split(' ');
+        string[] Line = Console.ReadLine().Split(' ');
 
-            A = int.Parse(Line[0]);
-            B = int.Parse(Line[1]);
-            C = int.Parse(Line[2]);
-            D = int.Parse(Line[3]);
+        A = int.Parse(Line[0]);
+        B = int.Parse(Line[1]);
+        C = int.Parse(Line[2]);
+        D = int.Parse(Line[3]);
 
-            if(B > C && 
-                D > A &&
-                    C + D > A + B &&
-                        C > 0 && D > 0){
-                Console.WriteLine("Valores aceitos");
-            }
-            else{
-                Console.WriteLine("Valores nao aceitos");
-            }
+        if(B > C && 
+            D > A &&
+                C + D > A + B &&
+                    C > 0 && D > 0){
+            Console.WriteLine("Valores aceitos");
+        }
+        else{
+            Console.WriteLine("Valores nao aceitos");
+        }
 
     }
 }

@@ -24,6 +24,6 @@ class URI {
             raio = double.Parse(Console.ReadLine());
             area = Math.Pow(raio ,2) * Pi;
 
-            Console.WriteLine("A={0:f4}", area);
+            Console.WriteLine($"A={area:f4}");
     }
 }

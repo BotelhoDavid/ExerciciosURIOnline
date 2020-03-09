@@ -26,6 +26,6 @@ class URI {
 
             Pay = Hour * Money;
 
-            Console.WriteLine("NUMBER = {0}\nSALARY = U$ {1:f2}", Numb, Pay);
+            Console.WriteLine($"NUMBER = {Numb}\nSALARY = U$ {Pay:f2}");
     }
 }

@@ -26,6 +26,6 @@ class URI {
             MAB = (A + B + Math.Abs(A - B)) / 2;
             MABC = (MAB + C + Math.Abs(MAB - C)) / 2;
             
-            Console.WriteLine("{0} eh o maior", MABC);
+            Console.WriteLine($"{MABC} eh o maior");
     }
 }

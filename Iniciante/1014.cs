@@ -20,6 +20,6 @@ class URI {
             Km = int.Parse(Console.ReadLine());
             Gas = double.Parse(Console.ReadLine());
 
-            Console.WriteLine("{0:f3} km/l", Km/Gas);
+            Console.WriteLine($"{Km/Gas:f3} km/l");
     }
 }

@@ -24,6 +24,6 @@ class URI {
             Bonus = double.Parse(Console.ReadLine());
             Final = Pay + ((Bonus * 15) / 100);
 
-            Console.WriteLine("TOTAL = R$ {0:f2}",Final);
+            Console.WriteLine($"TOTAL = R$ {Final:f2}");
     }
 }

@@ -25,6 +25,6 @@ class URI {
 
             Volume = (4.0 / 3) * Pi * (Math.Pow(Raio, 3));
 
-            Console.WriteLine("VOLUME = {0:f3}", Volume);
+            Console.WriteLine($"VOLUME = {Volume:f3}");
     }
 }

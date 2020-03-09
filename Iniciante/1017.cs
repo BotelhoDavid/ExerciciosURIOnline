@@ -25,6 +25,6 @@ class URI {
         h = double.Parse(Console.ReadLine());
         km = double.Parse(Console.ReadLine());
 
-        Console.WriteLine("{0:f3}", (h * km) / l);
+        Console.WriteLine($"{(h * km) / l:f3}");
     }
 }
