@@ -48,7 +48,7 @@ class URI {
         {
             Console.WriteLine($"Media: {Media:f1}\nAluno reprovado.");            
         }
-        if(Media >= 5.0 && Media <= 6.9)
+        if(Media >= 5.0 && Media <= 7.0)
         {
             Console.WriteLine($"Media: {Media:f1}\nAluno em exame.");
 
