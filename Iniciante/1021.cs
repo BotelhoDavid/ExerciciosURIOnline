@@ -38,7 +38,7 @@ class URI {
             quantMoedas = dinheiro / moedas[i];
             dinheiro %= moedas[i]; 
             
-            Console.WriteLine((int)quantMoedas + " moeda(s) de R$ {0:f2}",moedas[i]);
+            Console.WriteLine($"{(int)quantMoedas} moeda(s) de R$ {moedas[i]:f2}");
         }
     }
 }
