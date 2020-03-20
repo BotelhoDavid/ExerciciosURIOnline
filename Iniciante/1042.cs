@@ -11,61 +11,20 @@ using System;
 
 class URI {
 
-    static void Main(string[] args) { 
-
-        int num0, num1, num2, maior, medio, menor;
-
-        string[] num = Console.ReadLine().Split();
+    static void Main(string[] args) {
         
-        num0 = int.Parse(num[0]);
-        num1 = int.Parse(num[1]);
-        num2 = int.Parse(num[2]);
+        int a, b, c;
 
-        if (num0 > num1 && num0 > num2)
-        {
-            maior = num0;
-            if (num1 > num2)
-            {
-                medio = num1;
-                menor = num2;
-            }
-            else
-            {
-                medio = num2;
-                menor = num1;
-            }
-        }
-        else if (num1 > num2)
-        {
-            maior = num1;
-            if (num0 > num2)
-            {
-                medio = num0;
-                menor = num2;
-            }
-            else
-            {
-                medio = num2;
-                menor = num0;
-            }
-        }
-        else
-        {
-            maior = num2;
-            if (num0 > num1)
-            {
-                medio = num0;
-                menor = num1;
-            }
-            else
-            {
-                medio = num1;
-                menor = num0;
-            }
-        }
-        Console.WriteLine($"{menor}\n{medio}\n{maior}");
-        Console.WriteLine($"\n{num0}\n{num1}\n{num2}");
+        string[] str = Console.ReadLine().Split();
 
+        a = int.Parse(str[0]);
+        b = int.Parse(str[1]);
+        c = int.Parse(str[2]);
+
+        double[] num = {a, b, c};
+        Array.Sort(num);
+
+        Console.WriteLine($"{num[0]}\n{num[1]}\n{num[2]}");
+        Console.WriteLine($"\n{a}\n{b}\n{c}");           
     }
-
 }
