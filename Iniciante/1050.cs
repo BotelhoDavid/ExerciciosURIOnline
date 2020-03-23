@@ -11,14 +11,12 @@
 // Imprima o nome da cidade correspondente ao DDD existente na entrada. 
 // Imprima DDD nao cadastrado caso não existir DDD correspondente ao número digitado.
 
-using System;
+using System; 
 using System.Collections.Generic;
 
-class URI
-{
+class URI {
 
-    static void Main(string[] args)
-    {
+    static void Main(string[] args) {
         IDictionary<string, string> _listaDDD = new Dictionary<string, string> {
             {"61", "Brasilia"}
             ,{"71", "Salvador"}
@@ -31,10 +29,9 @@ class URI
 
         string _ddd = Console.ReadLine();
 
-        if (!_listaDDD.ContainsKey(_ddd))
-            Console.WriteLine("DDD nao cadastrado");
-
-        if (_listaDDD.TryGetValue(_ddd, out string _estado))
-        Console.WriteLine($"{_estado}");
+        if (!_listaDDD.TryGetValue(_ddd, out string _estado))
+           Console.WriteLine("DDD nao cadastrado");
+        else 
+            Console.WriteLine($"{_estado}");
     }
 }
