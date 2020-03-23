@@ -31,16 +31,10 @@ class URI
 
         string _ddd = Console.ReadLine();
 
-        if (string.IsNullOrEmpty(_ddd))
-            throw new ArgumentException($"O DDD precisa ser informado");
-
         if (!_listaDDD.ContainsKey(_ddd))
             Console.WriteLine("DDD nao cadastrado");
-        else
-        {
-            if (!_listaDDD.TryGetValue(_ddd, out string _estado))
-                throw new Exception($"Erro ao recuperar DDD");
-            Console.WriteLine($"DDD informado: {_estado}");
-        }
+
+        if (_listaDDD.TryGetValue(_ddd, out string _estado))
+        Console.WriteLine($"{_estado}");
     }
 }
